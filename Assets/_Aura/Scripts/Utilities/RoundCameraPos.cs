@@ -15,6 +15,8 @@ public class RoundCameraPos : CinemachineExtension
             Vector3 pos = state.FinalPosition;
 
             Vector3 pos2 = new Vector3(Round(pos.x),Round(pos.y),pos.z);
+
+            state.PositionCorrection += pos2 - pos;
         }
     }
 

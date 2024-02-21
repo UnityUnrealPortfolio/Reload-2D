@@ -1,0 +1,510 @@
+fileFormatVersion: 2
+guid: 22a8fd6ef644e8e418f225e1e73c455c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 5}
+        - {x: -5, y: 3}
+        - {x: -5, y: 0}
+        - {x: 0, y: -5}
+        - {x: 1, y: -5}
+        - {x: 6, y: 0}
+        - {x: 6, y: 4}
+        - {x: 2, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c573d50482dd22c4e9308fc825546f28
+      internalID: 259370352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: 6}
+        - {x: -4, y: 3}
+        - {x: -4, y: -2}
+        - {x: -1, y: -4}
+        - {x: 3, y: -4}
+        - {x: 4, y: -2}
+        - {x: 5, y: 3}
+        - {x: 3, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e75db853866954999d2ef50ab873a7
+      internalID: -365165425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: 5}
+        - {x: -3, y: 3}
+        - {x: -2, y: -2}
+        - {x: 0, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -2}
+        - {x: 5, y: 3}
+        - {x: 3, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5581ddf3988ae479cdc3e4eb0850a5
+      internalID: 487924619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 5}
+        - {x: -4, y: 3}
+        - {x: -3, y: -2}
+        - {x: -1, y: -4}
+        - {x: 2, y: -4}
+        - {x: 5, y: -2}
+        - {x: 5, y: 2}
+        - {x: 2, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8561c60c7e2080f4085111c92b2a3677
+      internalID: -1781738811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: -3}
+        - {x: -3, y: -6}
+        - {x: 3, y: -6}
+        - {x: 6, y: -4}
+        - {x: 7, y: 2}
+        - {x: 4, y: 5}
+        - {x: -2, y: 6}
+        - {x: -6, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522325c72fdeb2c459d332df79a573b3
+      internalID: 1783009645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: 6}
+        - {x: -4, y: 3}
+        - {x: -4, y: -5}
+        - {x: -1, y: -7}
+        - {x: 3, y: -5}
+        - {x: 6, y: -2}
+        - {x: 5, y: 2}
+        - {x: 3, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826f4af44a145504da3f63ccb2d89e33
+      internalID: 369616758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 5}
+        - {x: -2, y: 4}
+        - {x: -2, y: 2}
+        - {x: -2, y: -5}
+        - {x: -1, y: -6}
+        - {x: 1, y: -6}
+        - {x: 1, y: -4}
+        - {x: 1, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270430d6eb7e644408f4b4ad4a374cca
+      internalID: 1118669744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 5}
+        - {x: -5, y: 2}
+        - {x: -4, y: -5}
+        - {x: -2, y: -6}
+        - {x: 2, y: -6}
+        - {x: 4, y: -4}
+        - {x: 5, y: 1}
+        - {x: 3, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa6bef9a8fdef54fb453f54dce01b6f
+      internalID: 1926414761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: 5}
+        - {x: -4, y: 5}
+        - {x: -6, y: 3}
+        - {x: -4, y: -4}
+        - {x: -1, y: -6}
+        - {x: 2, y: -5}
+        - {x: 5, y: -2}
+        - {x: 6, y: 1}
+        - {x: 5, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2fae863e5185d4e89afb6dabd6d913
+      internalID: 236934273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: 5}
+        - {x: -2, y: 5}
+        - {x: -4, y: 4}
+        - {x: -2, y: -5}
+        - {x: 0, y: -6}
+        - {x: 3, y: -5}
+        - {x: 5, y: -3}
+        - {x: 6, y: 0}
+        - {x: 6, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae01738010be304eb76e773ead421e6
+      internalID: 753284743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: 5}
+        - {x: -4, y: 2}
+        - {x: -3, y: -3}
+        - {x: -1, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -3}
+        - {x: 3, y: 3}
+        - {x: 2, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f88778df0836a34ba3b57287b28f93a
+      internalID: -1968712482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hearts-and-coins32x32_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: 5}
+        - {x: -2, y: 5}
+        - {x: -5, y: 4}
+        - {x: -3, y: -4}
+        - {x: 0, y: -7}
+        - {x: 2, y: -6}
+        - {x: 4, y: -3}
+        - {x: 5, y: 0}
+        - {x: 5, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694e5f8b29ad5df48ab0f820d3adad24
+      internalID: -959642215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      hearts-and-coins32x32_0: 259370352
+      hearts-and-coins32x32_1: -365165425
+      hearts-and-coins32x32_10: -1968712482
+      hearts-and-coins32x32_11: -959642215
+      hearts-and-coins32x32_2: 487924619
+      hearts-and-coins32x32_3: -1781738811
+      hearts-and-coins32x32_4: 1783009645
+      hearts-and-coins32x32_5: 369616758
+      hearts-and-coins32x32_6: 1118669744
+      hearts-and-coins32x32_7: 1926414761
+      hearts-and-coins32x32_8: 236934273
+      hearts-and-coins32x32_9: 753284743
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
