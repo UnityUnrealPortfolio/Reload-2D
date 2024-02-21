@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4004e6fcd3db9439ffbfdd2be1db0a, type: 3}
   m_Name: PlayerHitPointData
   m_EditorClassIdentifier: 
-  hitPoints: 0
+  hitPoints: 50
   m_maxHitPoints: 100
   m_startingHitPoints: 50
