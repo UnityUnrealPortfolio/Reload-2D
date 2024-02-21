@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8b3464338c2da440aaaf73653f412d4, type: 3}
-  m_Name: HeartItem
+  m_Script: {fileID: 11500000, guid: dc4004e6fcd3db9439ffbfdd2be1db0a, type: 3}
+  m_Name: PlayerHitPointData
   m_EditorClassIdentifier: 
-  m_objectName: heart
-  m_sprite: {fileID: 259370352, guid: 22a8fd6ef644e8e418f225e1e73c455c, type: 3}
-  m_quantity: 10
-  m_stackable: 0
-  m_itemType: 1
+  hitPoints: 0
+  m_maxHitPoints: 100
+  m_startingHitPoints: 50

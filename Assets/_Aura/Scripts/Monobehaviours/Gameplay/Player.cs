@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Player : Character
 {
+
     private void OnTriggerEnter2D(Collider2D collision)
+
     {
         if (collision.gameObject.CompareTag("CanBePicked"))
         {
@@ -13,26 +15,37 @@ public class Player : Character
             if (hitItem != null)
             {
                 Debug.Log($"hit item name:{hitItem.m_objectName} of type {hitItem.m_itemType}");
-               
+                bool shouldDisappear = false;
                 switch (hitItem.m_itemType)
                 {
                     case Item.ItemType.Coin:
+                        shouldDisappear = true;
                         break;
                     case Item.ItemType.Health:
-                        AdjustHitPoints(hitItem.m_quantity);
+                      shouldDisappear =  AdjustHitPoints(hitItem.m_quantity);
                         break;
                     default:
                         break;
                 }
 
-                collision.gameObject.SetActive(false);
+                if(shouldDisappear)
+                {
+                   collision.gameObject.SetActive(false);
+                }
             }
         }
     }
 
-    private void AdjustHitPoints(int _amount)
+    public bool AdjustHitPoints(float _amount)
     {
-        m_hitPoints += _amount;
-        Debug.Log($"Adjusted hitPoints by: {_amount}. New Value: {m_hitPoints}");
+        //logic to prevent health pick up if hit points are at max
+        if(m_hitPoints.hitPoints < m_hitPoints.m_maxHitPoints)
+        {
+            m_hitPoints.hitPoints += _amount;
+            Debug.Log($"Adjusted hitPoints by: {_amount}. New Value: {m_hitPoints.hitPoints}");
+            return true;
+        }
+        return false;
+       
     }
 }
