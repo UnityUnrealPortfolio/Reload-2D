@@ -5,8 +5,14 @@ using UnityEngine;
 
 public class Player : Character
 {
-    public Inventory inventory;
+    public HitPoints _hitPointsSO;
+    private Inventory inventory;
 
+    //ToDo:refactor to use a scriptable object architecture
+    private void OnEnable()//when player enters the world it gets reference to this guy
+    {
+        ResetCharacter();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
 
     {
@@ -40,13 +46,48 @@ public class Player : Character
     public bool AdjustHitPoints(float _amount)
     {
         //logic to prevent health pick up if hit points are at max
-        if(m_hitPoints.hitPoints < m_hitPoints.m_maxHitPoints)
+        if(_hitPointsSO.hitPoints < _hitPointsSO.m_maxHitPoints)
         {
-            m_hitPoints.hitPoints += _amount;
-            Debug.Log($"Adjusted hitPoints by: {_amount}. New Value: {m_hitPoints.hitPoints}");
+            _hitPointsSO.hitPoints += _amount;
+            Debug.Log($"Adjusted hitPoints by: {_amount}. New Value: {_hitPointsSO.hitPoints}");
             return true;
         }
         return false;
        
+    }
+
+    public override void ResetCharacter()
+    {
+        inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+
+    }
+
+    public override IEnumerator DamageCharacter(int damage, float interval)
+    {
+       while(true)
+        {
+           _hitPointsSO.hitPoints -= damage;
+
+            if(_hitPointsSO.hitPoints <= float.Epsilon)
+            {
+                KillCharacter();
+                break;
+            }
+            if(interval > float.Epsilon)
+            {
+                yield return new WaitForSeconds(interval);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+
+    public override void KillCharacter()
+    {
+        base.KillCharacter();
+
+        Destroy(inventory.gameObject);
     }
 }

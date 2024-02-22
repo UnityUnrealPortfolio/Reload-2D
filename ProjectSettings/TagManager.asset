@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - CanBePicked
+  - PlayerVCam
+  - Inventory
   layers:
   - Default
   - TransparentFX
