@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1725477565319835696}
   - component: {fileID: 1725477565319835702}
   - component: {fileID: 1725477565319835703}
-  - component: {fileID: 1725477565319835700}
   - component: {fileID: 1725477565319835701}
+  - component: {fileID: 1725477565319835700}
+  - component: {fileID: 1976872363236353865}
   - component: {fileID: 500298710294198100}
   m_Layer: 10
   m_Name: EnemyObject
@@ -109,22 +110,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &1725477565319835700
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725477565319835697}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.028098002, y: -0.085632}
-  m_Size: {x: 0.44606778, y: 0.6735279}
-  m_Direction: 0
 --- !u!50 &1725477565319835701
 Rigidbody2D:
   serializedVersion: 4
@@ -146,6 +131,38 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &1725477565319835700
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725477565319835697}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.028098002, y: -0.085632}
+  m_Size: {x: 0.44606778, y: 0.6735279}
+  m_Direction: 0
+--- !u!58 &1976872363236353865
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725477565319835697}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.13}
+  serializedVersion: 2
+  m_Radius: 0.9
 --- !u!114 &500298710294198100
 MonoBehaviour:
   m_ObjectHideFlags: 0
