@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player : Character
 {
+    public Inventory inventory;
 
     private void OnTriggerEnter2D(Collider2D collision)
 
@@ -19,7 +20,7 @@ public class Player : Character
                 switch (hitItem.m_itemType)
                 {
                     case Item.ItemType.Coin:
-                        shouldDisappear = true;
+                        shouldDisappear = inventory.AddItem(hitItem);
                         break;
                     case Item.ItemType.Health:
                       shouldDisappear =  AdjustHitPoints(hitItem.m_quantity);

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public GameObject slotPrefab;
+    public RectTransform slotHolder;
     public const int numSlots = 5;
     Image[] itemImages = new Image[numSlots];
     Item[] items = new Item[numSlots];
@@ -27,11 +28,11 @@ public class Inventory : MonoBehaviour
                 GameObject newSlot = Instantiate(slotPrefab);
                 newSlot.name = $"ItemSlot_ {i}";
 
-                newSlot.transform.SetParent(gameObject.transform.GetChild(0).transform,false);//ToDo:refactor this to just attach a reference to the parent in the editor
+                newSlot.transform.SetParent(slotHolder,false);
 
                 slots[i] = newSlot;
 
-                itemImages[i] = newSlot.transform.GetChild(1).GetComponent<Image>();//ToDo:can't we have the slot hold references to it's own children
+                itemImages[i] = newSlot.GetComponent<Slot>().ItemImage;
 
             }
         }
@@ -60,10 +61,11 @@ public class Inventory : MonoBehaviour
 
                 quantityText.text = items[i].m_quantity.ToString();
 
-                result = true;
+                return true;
             }
-            if (items[i] == null)
+            else if (items[i] == null)
             {
+                Debug.Log("inside Add Items, Empty slots");
                 //add to an empty slot
                 //first time we've picked up this item
                 //copy the item before adding so we don't
@@ -72,12 +74,12 @@ public class Inventory : MonoBehaviour
                 items[i].m_quantity = 1;
                 itemImages[i].sprite = itemToAdd.m_sprite;
                 itemImages[i].enabled = true;
-                result = true;
+                return true;
             }
          
       
         }
 
-        return result;  
+        return false;  
     }
 }
