@@ -29,7 +29,7 @@ public class Enemy : Character
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("Inside OnCollisionExit2D");
+      
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.gameObject.GetComponent<Player>();
@@ -45,7 +45,7 @@ public class Enemy : Character
        while (true)
         {
             hitPoints = hitPoints - damage;
-
+            StartCoroutine(FlickerCharacter());
             if(hitPoints <= float.Epsilon)
             {
                 KillCharacter();

@@ -25,27 +25,18 @@ public class MovementController : MonoBehaviour
 
     private void UpdateStates()
     {
-       //transition animations based on movement velocity
-      if(m_rigidBody.velocity.x > 0)
+      if(Mathf.Approximately(m_moveInput.x, 0)&&
+            Mathf.Approximately(m_moveInput.y, 0))
         {
-            m_animator.SetInteger("AnimationState", (int)CharStates.WalkEast);
-        }
-      else if(m_rigidBody.velocity.x < 0)
-        {
-            m_animator.SetInteger("AnimationState",(int)CharStates.WalkWest);
-        }
-      else if(m_rigidBody.velocity.y > 0)
-        {
-            m_animator.SetInteger("AnimationState",(int)CharStates.WalkNorth);
-        }
-      else if(m_rigidBody.velocity.y < 0)
-        {
-            m_animator.SetInteger("AnimationState", (int)CharStates.WalkSouth);
+            m_animator.SetBool("isWalking", false);
         }
         else
         {
-            m_animator.SetInteger("AnimationState", (int)CharStates.IdleSouth);
+            m_animator.SetBool("isWalking", true);
         }
+
+        m_animator.SetFloat("xDir", m_moveInput.x);
+        m_animator.SetFloat("yDir",m_moveInput.y);
     }
 
     private void MoveCharacter()
@@ -69,4 +60,4 @@ public enum CharStates
     WalkWest = 3,
     WalkNorth = 4,
     IdleSouth = 5
-}
+}//ToDo:Remove as we have refactored the animation logic to a blend tree

@@ -57,4 +57,12 @@ public class RPGGameManager : MonoBehaviour
       playerVCam.Follow = instantiatedPlayer.transform;
       
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }
